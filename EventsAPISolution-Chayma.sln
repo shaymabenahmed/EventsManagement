@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAPI-Chayma", "EventsManagement-Chayma\EventsAPI-Chayma.csproj", "{567B4DB8-D1CC-40A4-9349-37ECB7EE880F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsManagementAppClient", "EventsManagementAppClient\EventsManagementAppClient.csproj", "{0B1245FC-05D1-495B-BEF3-D5C58136C9F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{567B4DB8-D1CC-40A4-9349-37ECB7EE880F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567B4DB8-D1CC-40A4-9349-37ECB7EE880F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567B4DB8-D1CC-40A4-9349-37ECB7EE880F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567B4DB8-D1CC-40A4-9349-37ECB7EE880F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B1245FC-05D1-495B-BEF3-D5C58136C9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1245FC-05D1-495B-BEF3-D5C58136C9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1245FC-05D1-495B-BEF3-D5C58136C9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1245FC-05D1-495B-BEF3-D5C58136C9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57568134-7B27-4A37-A805-B73CE2096722}
+	EndGlobalSection
+EndGlobal
