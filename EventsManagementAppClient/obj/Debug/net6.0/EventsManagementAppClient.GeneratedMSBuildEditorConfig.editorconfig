@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzQ2xpZW50XENyZWF0ZUV2ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/shaym/source/repos/EventsManagementSolution-Chayma/EventsManagementAppClient/Views/EventsClient/DeleteEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzQ2xpZW50XERlbGV0ZUV2ZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaym/source/repos/EventsManagementSolution-Chayma/EventsManagementAppClient/Views/EventsClient/EditEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzQ2xpZW50XEVkaXRFdmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/shaym/source/repos/EventsManagementSolution-Chayma/EventsManagementAppClient/Views/EventsClient/GetAllEvents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzQ2xpZW50XEdldEFsbEV2ZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

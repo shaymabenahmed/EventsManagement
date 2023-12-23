@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "1PjZ+ZsoqPmVT3E5JNSF36Iw73Xj62G1sIODGAyXk3Q=",
+  "Hash": "4wRo4BBcuPZMxvWXXGHxN2in2utmtyMTCdbgdoXvnL4=",
   "Source": "EventsManagementAppClient",
   "BasePath": "_content/EventsManagementAppClient",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\shaym\\source\\repos\\EventsManagementSolution-Chayma\\EventsManagement-Chayma\\EventsAPI-Chayma.csproj",
+      "Version": 2,
+      "Source": "EventsAPI-Chayma",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "EventsManagementAppClient\\wwwroot",

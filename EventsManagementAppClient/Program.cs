@@ -22,6 +22,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=EventsClient}/{action=GetEventById}/{id?}");
+    pattern: "{controller=EventsClient}/{action=CreateEvent}");
 
 app.Run();
