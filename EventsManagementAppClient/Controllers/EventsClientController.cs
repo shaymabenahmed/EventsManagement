@@ -2,6 +2,7 @@
 using EventsManagementAppClient.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Net.Http.Json;
 
 
 namespace EventsManagementAppClient.Controllers
@@ -61,7 +62,7 @@ namespace EventsManagementAppClient.Controllers
             }
             else
             {
-                return View();
+                return View("Error");
             }
         }
 
@@ -74,16 +75,13 @@ namespace EventsManagementAppClient.Controllers
 
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("https://localhost:7065");
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(
-                new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json")
-                );
+           
             if (ModelState.IsValid)
             {
                 HttpResponseMessage response = await client.PostAsJsonAsync("api/Events/create-event", eventClient);
                 if (response.IsSuccessStatusCode)
                 {
-                    return RedirectToAction("GetAllEvents");
+                    return RedirectToAction("get-all-events");
                 }
                 else
                 {
@@ -150,6 +148,26 @@ namespace EventsManagementAppClient.Controllers
             }
             var FM = from e in events where e.Title.Contains(title) select e;
             return View(FM.ToList());
+        }
+
+        [HttpPost]
+        public IActionResult SearchBy2(string title, string location)
+        {
+            var movies = _context.Events.AsQueryable();
+            ViewBag.Location = movies.Select(m => m.Location).Distinct().ToList();
+            if (location != "All")
+            {
+                if (!String.IsNullOrEmpty(title))
+                {
+                    movies = movies.Where(m => m.Title.Contains(title));
+                }
+                movies = movies.Where(m => m.Location == location);
+            }
+            if (!String.IsNullOrEmpty(title))
+            {
+                movies = movies.Where(m => m.Title.Contains(title));
+            }
+            return View("SearchBy2", movies.ToList());
         }
     }
 }

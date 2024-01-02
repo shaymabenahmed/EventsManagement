@@ -17,5 +17,5 @@ public partial class Organizer
     [RegularExpression(@"^[0-9\s\-\(\)]+$", ErrorMessage = "You must set a valid phone number")]
     public string Phone { get; set; } = null!;
 
-    public virtual ICollection<Event> Events { get; set; } = new List<Event>();
+    public virtual ICollection<Event>? Events { get; set; } = new List<Event>();
 }

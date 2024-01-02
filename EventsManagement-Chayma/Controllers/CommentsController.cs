@@ -13,9 +13,9 @@ namespace EventsManagement_Chayma.Controllers
     [ApiController]
     public class CommentsController : ControllerBase
     {
-        private readonly EventsClientDbContext _context;
+        private readonly EventsDbContext _context;
 
-        public CommentsController(EventsClientDbContext context)
+        public CommentsController(EventsDbContext context)
         {
             _context = context;
         }

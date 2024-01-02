@@ -23,6 +23,8 @@ public partial class EventsDbContext : DbContext
     public virtual DbSet<Participant> Participants { get; set; }
 
     public virtual DbSet<Comment> Comments { get; set; }
+    public DbSet<EventsManagement_Chayma.Models.Comment>? Comment { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Name=ConnectionStrings:EventsCS");
 
@@ -136,7 +138,7 @@ public partial class EventsDbContext : DbContext
 
             );
 
-        OnModelCreatingPartial(modelBuilder);
+       // OnModelCreatingPartial(modelBuilder);
     }
 
    
@@ -147,5 +149,5 @@ public partial class EventsDbContext : DbContext
    
 
 
-    public DbSet<EventsManagement_Chayma.Models.Comment>? Comment { get; set; }
+
 }

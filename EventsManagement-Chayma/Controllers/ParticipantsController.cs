@@ -13,9 +13,9 @@ namespace EventsManagement_Chayma.Controllers
     [ApiController]
     public class ParticipantsController : ControllerBase
     {
-        private readonly EventsClientDbContext _context;
+        private readonly EventsDbContext _context;
 
-        public ParticipantsController(EventsClientDbContext context)
+        public ParticipantsController(EventsDbContext context)
         {
             _context = context;
         }

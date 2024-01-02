@@ -1,7 +1,17 @@
+using EventsManagement_Chayma.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<EventsDbContext>(
+    options => options.UseSqlServer(
+        builder.Configuration.GetConnectionString("EventsCS")
+        )
+    );
 
 var app = builder.Build();
 
@@ -22,6 +32,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=EventsClient}/{action=CreateEvent}");
+    pattern: "{controller=EventsClient}/{action=GetAllEvents}");
 
 app.Run();
